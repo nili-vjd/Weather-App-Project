@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weatherapp">
+      <h1>
+        <form id="search-form">
+          <input type="search" 
+          placeholder="search city" 
+          class="search-box"
+          autocomplete="off" 
+          autofocus="on"
+          id= "search-input"
+          />
+          <br />
+         <input type="submit" class="btn btn-primary search-btn" value="search" id="submit-button"/> 
+         
+        <button class="btn btn-primary " id="current-location-button"> current location </button>
+        </form>
+      </h1>
+      <h2 id="city">Tehran</h2>
+      <h3>
+        <span class="temperature" id="temperature"> 17</span> 
+        <span class="changeTemp">
+        <a href="#" id="current-celsius">°C</a> -
+        <a href="#" id="current-fahrenheit">°F</a> 
+        </span> 
+
+      <img src="images/cloudy.png" alt="" class="cloudy" /></h3>
+      <h4 class="weather-description" id="weather-description"> Rain  </h4>
+      <h5 id="date" >Sunday 11:30 
+      </h5>
+      <div class="container">
+        <div class="row">
+          <div class="col-2">Tue
+            <br />
+            22°C
+            <br />
+            <img src="images/sunny.png" alt="" />
+          </div>
+          <div class="col-2">Wed
+            <br />
+            19°C
+             <br />
+            <img src="images/partly-cloudy.png" alt="" />
+          </div>
+          <div class="col-2">Thu
+            <br />
+            16°C
+            <br />
+            <img src="images/rain.png" alt="" />
+          </div>
+          <div class="col-2">Fri
+            <br />
+            -1°C
+            <br />
+             <img src="images/sunny.png" alt="" />
+          </div>
+          <div class="col-2">Sat
+            <br />
+            10°C
+            <br />
+             <img src="images/rain-s-cloudy.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  <script src="src/index.js"> </script>
+  </body>
+</html>
